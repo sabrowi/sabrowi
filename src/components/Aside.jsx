@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Aside = () => {
   return (
@@ -10,7 +11,9 @@ const Aside = () => {
           className="avatar"
           alt=""
         />
-        <h3 className="name mb-5">KUKUH SABROWI</h3>
+        <Link to="/">
+          <h3 className="name mb-5">KUKUH SABROWI</h3>
+        </Link>
         <p className="bio mb-5">
           Front End Programmer · Mobile & Web Apps Developer · Internet of
           Things{" "}

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import datas from "../assets/data";
 import { SRLWrapper } from "simple-react-lightbox";
+import { Link } from "react-router-dom";
 
 const Portfolio = ({ match }) => {
-  const [data, setData] = useState(datas[match.params.id]);
+  const [data, setData] = useState(datas[match.params.id - 1]);
   useEffect(() => {
     console.log("mounted", match.params.id, datas[match.params.id]);
-    setData(datas[match.params.id]);
+    setData(datas[match.params.id - 1]);
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
@@ -15,6 +17,14 @@ const Portfolio = ({ match }) => {
       </div>
       <p>{data.description}</p>
       <p>Technology stack : {data.stack}</p>
+      <Link to="/" className="btn btn-sm  btn-primary">
+        Back
+      </Link>{" "}
+      {data.link ? (
+        <a href={data.link} className="btn-sm btn btn-primary" target="_blank">
+          {data.linkname}
+        </a>
+      ) : null}
       <SRLWrapper>
         <div className="container portfolio">
           <div className="row">

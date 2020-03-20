@@ -4,6 +4,7 @@ const data = [
     stack: "React Native, Codeigniter, LeafletJS",
     link:
       "https://play.google.com/store/apps/details?id=com.polresbanyumas&hl=en",
+    linkname: "Go to Play Store",
     description:
       "Aplikasi yang dimiliki oleh Polres Banyumas untuk pelaporan masyarakat secara real time",
     images: [
@@ -17,14 +18,14 @@ const data = [
       "bsa-8.jpg",
       "bsa-9.jpg",
       "bsa-10.jpg",
-      "bsa-11.jpg",
-      "bsa-12.jpg"
+      "bsa-11.jpg"
     ]
   },
   {
     name: "E-Patroli",
     stack: "Ionic, Codeigniter, LeafletJS",
     link: null,
+    linkname: null,
     description:
       "Aplikasi yang digunakan oleh Sabhara Polres Banyumas untuk pelaporan kegiatan Patroli",
     images: [
@@ -47,6 +48,7 @@ const data = [
     name: "MobilTravel",
     stack: "ReactJS, Laravel",
     link: "https://www.mobiltravel.id/",
+    linkname: "www.mobiltravel.id",
     description: "Platform pemesanan travel online kapan saja dan dimana saja.",
     images: [
       "mt-1.png",
@@ -64,6 +66,7 @@ const data = [
     name: "PSC 119 Dinas Kesehatan Purbalingga",
     stack: "React Native, Laravel, NodeJS, Firebase, Socket.IO",
     link: "https://play.google.com/store/apps/details?id=id.dinkespbg.psc119",
+    linkname: "Go to Play Store",
     description: "Aplikasi untuk kegawatdaruratan Dinas Kesehatan Purbalingga",
     images: [
       "psc119-1.png",
@@ -78,6 +81,7 @@ const data = [
     name: "Sistem Manajemen Koperasi",
     stack: "ReactJS, Laravel",
     link: null,
+    linkname: null,
     description: "Aplikasi untuk kegawatdaruratan Dinas Kesehatan Purbalingga",
     images: [
       "simkop-1.png",
@@ -93,7 +97,9 @@ const data = [
   {
     name: "Syirkah Umat Mulia",
     stack: "React Native, CodePush, Laravel",
-    link: null,
+    link:
+      "https://play.google.com/store/apps/details?id=id.sis.syirkahummatmulia&hl=en",
+    linkname: "Go to Play Store",
     description:
       "Platform crwodfunding/urun dana berbasis syariah yang dimiliki oleh Koperasi Syirkah Ummat Mulia",
     images: [
