@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import datas from "../assets/data";
 import { SRLWrapper } from "simple-react-lightbox";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = ({ match }) => {
   const [data, setData] = useState(datas[match.params.id - 1]);
+  const { t } = useTranslation();
   useEffect(() => {
-    console.log("mounted", match.params.id, datas[match.params.id]);
-    setData(datas[match.params.id - 1]);
+    // console.log("mounted", match.params.id, datas[match.params.id]);
+    // setData(datas[match.params.id - 1]);
     window.scrollTo(0, 0);
   }, []);
   return (
@@ -15,13 +17,20 @@ const Portfolio = ({ match }) => {
       <div className="content-title text-center">
         <h1>{data.name}</h1>
       </div>
-      <p>{data.description}</p>
-      <p>Technology stack : {data.stack}</p>
+      <p>{t("description", { returnObjects: true })[match.params.id - 1]}</p>
+      <p>
+        {t("stack")} : {data.stack}
+      </p>
       <Link to="/" className="btn btn-sm  btn-primary">
-        Back
+        {t("back")}
       </Link>{" "}
       {data.link ? (
-        <a href={data.link} className="btn-sm btn btn-primary" target="_blank">
+        <a
+          href={data.link}
+          className="btn-sm btn btn-primary"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           {data.linkname}
         </a>
       ) : null}

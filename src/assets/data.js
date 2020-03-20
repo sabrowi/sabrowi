@@ -4,7 +4,7 @@ const data = [
     stack: "React Native, Codeigniter, LeafletJS",
     link:
       "https://play.google.com/store/apps/details?id=com.polresbanyumas&hl=en",
-    linkname: "Go to Play Store",
+    linkname: "Play Store",
     description:
       "Aplikasi yang dimiliki oleh Polres Banyumas untuk pelaporan masyarakat secara real time",
     images: [
@@ -63,10 +63,10 @@ const data = [
     ]
   },
   {
-    name: "PSC 119 Dinas Kesehatan Purbalingga",
+    name: "PSC 119 Purbalingga",
     stack: "React Native, Laravel, NodeJS, Firebase, Socket.IO",
     link: "https://play.google.com/store/apps/details?id=id.dinkespbg.psc119",
-    linkname: "Go to Play Store",
+    linkname: "Play Store",
     description: "Aplikasi untuk kegawatdaruratan Dinas Kesehatan Purbalingga",
     images: [
       "psc119-1.png",
@@ -82,7 +82,7 @@ const data = [
     stack: "ReactJS, Laravel",
     link: null,
     linkname: null,
-    description: "Aplikasi untuk kegawatdaruratan Dinas Kesehatan Purbalingga",
+    description: "Sistem manajemen koperasi simpan pinjam",
     images: [
       "simkop-1.png",
       "simkop-2.png",
@@ -99,7 +99,7 @@ const data = [
     stack: "React Native, CodePush, Laravel",
     link:
       "https://play.google.com/store/apps/details?id=id.sis.syirkahummatmulia&hl=en",
-    linkname: "Go to Play Store",
+    linkname: "Play Store",
     description:
       "Platform crwodfunding/urun dana berbasis syariah yang dimiliki oleh Koperasi Syirkah Ummat Mulia",
     images: [
